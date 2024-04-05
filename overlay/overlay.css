@@ -1,0 +1,31 @@
+#skill-overlay {
+    position: fixed; 
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 5px 2px 2px grey;
+    background: #F4F4F6;
+    z-index: 9999999999
+}
+
+#skill-list {
+    list-style-type: none;
+}
+
+.skill-list-item {
+    padding: 3px;
+    border-radius: 10px;
+    background: #DDDDE3;
+    margin: 5px 0px 5px 0px;
+}
+
+.skill-list-item-bn {
+    padding: 2px;
+    margin-left: 5px;
+    float: right;
+    cursor: pointer;
+    background-color: red;
+    border-radius: 3px;
+}

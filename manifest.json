@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Job Details Finder",
+  "description": "Finds the job details on a job listing",
+  "version": "1.0",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_icon": {
+      "16": "images/icon-16.png",
+      "32": "images/icon-32.png",
+      "48": "images/icon-48.png",
+      "128": "images/icon-128.png"
+    }
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+B",
+        "mac": "Command+B"
+      }
+    },
+    "save-and-close": {
+      "suggested_key": {
+        "default": "Ctrl+X",
+        "mac": "Command+Shift+B"
+      },
+      "description": "Save the skills and close"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources" : [
+    {
+      "resources": ["overlay/overlay.html", "overlay/overlay.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
